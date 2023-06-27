@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #ebdfdf;
+  background-size: cover;
+  background-position: center;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1.5px solid rgb(242, 53, 160);
+  width: 450px;
+  margin: auto;
+  margin-top: 30px;
+  -webkit-box-shadow: 12px 9px 48px 11px rgba(155, 23, 102, 0.3);
+  box-shadow: 12px 9px 48px 11px rgba(216, 23, 139, 0.3);
+}
+
+.tracker {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.tracker .close {
+  height: 30px;
+  width: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(219, 172, 172);
+  color: brown;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tracker .add {
+  height: 30px;
+  width: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(110, 201, 111);
+  color: brown;
+  cursor: pointer;
+}
+
+.container-input {
+  margin: 20px;
+}
+
+.container-input .task input {
+  width: 360px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+.container-input .day-time input {
+  width: 360px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+.day-time {
+  margin-top: 20px;
+}
+
+.container-input .set-reminder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.set-reminder {
+  margin-top: 20px;
+}
+
+.container-input .set-reminder input {
+  width: 20px;
+  margin-right: 15px;
+}
+
+.container-input .save-task {
+  text-align: center;
+  font-size: larger;
+  align-self: center;
+}
+
+.save-task {
+  margin-top: 20px;
+}
+
+.container-input .save-task button {
+  width: 360px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(153, 214, 214, 0.65) url("https://htmlcheatsheet.com/images/logo-css.png") no-repeat fixed -12px -1px;
+  text-shadow: 1px -1px 4px #1C6EA3;
+}
+
+.listTask {
+  border-left: 7px solid pink;
+  border-right: 7px solid pink;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f0ebeb;
+
+}
+
+.listTask .delete {
+  width: 30px;
+  color: red;
+  font-size: 15px;
+  border: none;
+  background-color: #f0ebeb;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.isReminder {
+  border-left: 5px solid green;
+}
+
+.taskItem {
+  display: flex;
+  padding-left: 20px;
+  border: 1px solid green;
+  margin: 10px;
+  border-radius: 5px;
 }
