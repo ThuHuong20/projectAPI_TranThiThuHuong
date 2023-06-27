@@ -1,14 +1,14 @@
 {
   "results": [
     {
-      "task": "study",
+      "task": "Study ",
       "date": "23 jun 2023",
       "isReminder": true,
       "id": 1
     },
     {
       "task": "Homework ",
-      "date": "27 july 2023",
+      "date": "30 july 2023",
       "isReminder": false,
       "id": 2
     }
